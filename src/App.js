@@ -1,17 +1,18 @@
 import React from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link } from 'react-router-dom';
-import logo from './logo.svg';
 import './css/tailwind.css';
-import Header from './components/header.js';
+import Timer from './components/Timer';
+import TimerControllers from './components/TimerControllers';
+import Sound from './components/Sound';
+import Header from './components/Header';
+import {BrowserRouter as Router} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
     <Router><Header/></Router>
+      <Timer/>
+      <TimerControllers/>
+      <Sound/>
     </div>
   );
 }
